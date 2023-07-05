@@ -130,6 +130,9 @@
 # xxx （无指令默认为 Google）
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
 
+# Unlock browser restrictions for new bing AI search.
+
+^https:\/\/www\.bing\.com\/(search|new) url request-header (\r\nUser-Agent:.+?)\w+\/[\d\.]+(\r\n) request-header $1AppleWebKit/537.36 Chrome/110.0 Safari/537.36 Edg/110.0$2
 
 [MITM]
-hostname = duckduckgo.com
+hostname = duckduckgo.com, www.bing.com
