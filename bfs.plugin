@@ -1,0 +1,26 @@
+﻿#!name=BingAI For Safari
+
+#!desc=bing ai伪装edge浏览器
+
+#!homepage=https://yfamily.ml/
+
+#!author=deezertidal
+
+#!icon=https://yfamily.ml/IMG/bing.png
+
+
+
+
+
+[Script]
+
+http-request ^https?://www.bing.com requires-body=0,script-path=https://raw.githubusercontent.com/imgol/loon/main/bfs.js, tag=Bing For Safari
+
+
+
+
+
+[MITM] 
+
+hostname = www.bing.com
+
